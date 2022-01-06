@@ -1,0 +1,108 @@
+:root {
+    --default-font: -apple-system, BlinkMacSystemFont, "SegoeUI", Roboto, "HelveticaNeue", Arial, "NotoSans", sans-serif;
+    --default-font-size: 18px;
+    --default-h1-font-size: calc(var(--default-font-size) * 2.5);
+    --default-h2-font-size: calc(var(--default-font-size) * 1.75);
+    --default-h3-font-size: calc(var(--default-font-size) * 1.5);
+    --default-h4-font-size: calc(var(--default-font-size) * 1.25);
+    --default-border-radius: 5px;
+}
+
+h1 { font-size: var(--default-h1-font-size); }
+h2 { font-size: var(--default-h2-font-size); }
+h3 { font-size: var(--default-h3-font-size); }
+h4 { font-size: var(--default-h4-font-size); }
+
+a { text-decoration: none; }
+
+body {
+    margin: 0;
+    font-family: var(--default-font);
+    font-size: var(--default-font-size);
+    background-color: #F0F0F0;
+    text-align: justify;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 25px 10% 25px 10%;
+    max-width: 1fr;
+    min-width: 720px;
+}
+
+aside .container {
+    padding: 1px 10% 1px 10%;
+    background-color: #5C84B1;
+    color: #FFFFFF;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+header .container{
+    display: grid;
+    grid-template-columns: 1fr 200px 400px 1fr;
+    grid-template-rows: auto auto;
+    background-color: yellow;
+}
+
+header .container .profile-pic {
+    grid-column: 2;
+    grid-row: span 2;
+    border-radius: 50%;
+    background-color: red;
+    margin: 5px;
+}
+
+header .container h1 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+header .container p {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 125px auto 1fr;
+    grid-template-rows: auto auto;
+    background-color: orange;
+}
+
+footer .container ul {
+    list-style-type: none;
+    padding-left: 10px;
+    list-style-position: inside;
+}
+
+footer .container .profile-pic {
+    grid-row: 1;
+    grid-column: 2;
+    border-radius: 5%;
+    background-color: red;
+}
+
+footer .container .contact-info {
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .socials {
+    display: flex;
+    justify-content: left;
+    padding-left: 0px;
+}
+
+footer .container #last-modified {
+    grid-row: 2;
+    grid-column: span 4;
+}
