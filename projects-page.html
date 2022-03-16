@@ -1,0 +1,198 @@
+<main>
+  <section>
+    <div class="container">
+      <h2>8-Bit ALU Part 1</h2>
+      <h3>Feb 19, 2021 - Feb 26, 2021</h3>
+      <p>
+        This project was actually my first assignment for the course
+        Microprocessors and Computer Architecture (ELET 2570) at UWI. To put
+        it briefly, we were required to design an 8-bit ALU that could perform
+        the operations AND, OR, EOR, ADD, SUBTRACT, MULTIPLY and COMPARE using
+        a tool called Logisim. For more details on the assignment and my
+        submission, see this git
+        <a href="https://github.com/jahunter767/elet2570-assign1">repository
+        </a>.
+
+        This was more or less my exposure to Logisim and logic simulation
+        software in general. It didn't take me long to adjust to the software
+        however designing the ALU for this assignment took me just under a
+        week.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>8-Bit ALU Part 2</h2>
+      <h3>Mar 5, 2021 - Mar 12, 2021</h3>
+      <p>
+        This assignment built on the previous one by requiring the class to
+        implement the ALU designed in Logisim in VHDL. I didn't get to get to
+        explore any HDLs in the summer like I wanted as I did some additional
+        courses so this assignment was a first for me as well. It took a few
+        days for me to really get to know the language
+
+        For more details on the assignment and my submission, see this git
+        <a href="https://github.com/jahunter767/elet2570-assign2">repository
+        </a>.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>DIY Multimeter</h2>
+      <h3>Mar 8, 2021 - Apr 19, 2021</h3>
+      <p>
+        This project was actually a lab for a course called Engineering Analysis
+        and Practise (ELET 3405). We were given a schematic for a multimeter
+        using an ATmega 32 or ATmega 16 at the core and tasked with implementing
+        the firmware. The specific features each student had to implement were
+        determined by their major. One of my majors was in Electronics hence I
+        had to implement firmware to measure temperature, frequency of a square
+        wave and distance in addition to the default DC voltage, capacitance and
+        resistance. Unfortunately due to the course being delivered remotely,
+        a lack of access to the necessary modules and the lecturer having
+        external issues hindering his ability to moderate the course, the
+        deadline was extended beyond the typical week long duration.
+
+        For more details on the assignment and my submission, see this git
+        <a href="https://github.com/jahunter767/elet3405-lab3">repository</a>.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Single GPU Passthrough</h2>
+      <h3>Oct 2021</h3>
+      <p>
+        At this point I had been dual booting Windows and Linux for almost 3
+        years and realized the only real need I had for Windows was for
+        proprietary software with no FOSS equivalent offered in my distro's
+        repository and for the rare occasions that I play games. Realizing
+        this, the idea of switching to linux full time and using a virtual
+        machine with hardware passthrough for Windows became more appealing
+        versus having to maintain 2 OSes, one of which I rarely use.
+
+        This project served as a final experiment to explore the feasibility
+        of running Windows in a disposable VM versus dual booting. After
+        spending a few days learning how to passthrough hardware with my
+        hypervisor and actively using it for my specific use cases I found the
+        advantages far outweighed the disadvantages for my specific situation
+        and I have since switched to linux full time in the following month.
+
+        <table>
+          <thead>
+            <tr>
+              <td>Advantages</td>
+              <td>Disadvantages</td>
+            </tr>
+          </thead>
+          <tr>
+            <td>saves storage space as the virtual disk expands as needed</td>
+            <td>
+              less system resources (like RAM and CPU cores) available to
+              the VM
+            </td>
+          </tr>
+          <tr>
+            <td>
+              not limited to storing personal files on NTFS (which has limited
+              support for linux at the time of writing this) or FAT file
+              systems. In other words I can use more complex file systems with
+              more features like BTRFS with copy-on-write and snapshot support.
+            </td>
+            <td>
+              exposing files to VM via a network share over a virtual
+              network has noticeably higher latency than passing through a
+              drive
+            </td>
+          </tr>
+          <tr>
+            <td>
+              I can use full disk encryption to protect my personal files when
+              my PC is off
+            </td>
+            <td>
+              the performance penalty for virtualization (though this is
+              mainly noticeable in more demanding tasks)
+            </td>
+          </tr>
+          <tr>
+            <td>less drivers to install and update on a regular basis</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              easy to backup and restore a VM by using snapshots or saving a
+              copy of the virtual disk and the hypervisor configuration
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+
+        For details on how I setup the VM see this
+        <a href="https://github.com/jahunter767/Single-GPU-Passthrough">
+        repository</a>.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Scrumble</h2>
+      <h3>October 1, 2021 - December 1, 2021</h3>
+      <p>
+        This is a 2 player game that is modeled after Scrabble but altered to
+        be more competitive and fast paced. It retained most of the mechanics
+        from Scrabble except that word length and the time taken to make a play
+        are used to add bonuses to a player's score instead of special tiles on
+        the board and points earned shift a slider in the player's favour (to
+        the detriment of the opponent) in a similar fashion to a tug-of-war
+        match. Matches may also be timed for an added challenge.
+
+        This game was
+
+        For more details on the assignment and my submission, see this git
+        <a href="https://github.com/jahunter767/swen3145_theJTK">repository</a>.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>MAX-30102 and MPU-6050 Arduino Libraries</h2>
+      <h3>Mar 2020 - Apr 2020</h3>
+      <p>
+        These libraries were developed to facilitate another project I was
+        working on simultaneously intended to monitor patient's well-being.
+        The patient monitoring system tracked the patient's heart rate,
+        sleeping position and detect falls among other things and relay the
+        data to a server. While I can't release the full code for the project
+        I thought at least publish the libraries for anyone who may need them
+        in the future.
+
+        Libraries had already existed for both modules however the
+        communication via i2c and the logic to interface with the modules were
+        deeply coupled preventing both libraries from being used simultaneously.
+        Personally, I also found the code not to be very readable so I thought
+        to rewrite the libraries as opposed to modifying the existing code. It
+        didn't take long to implement a functional interface (I finished both
+        in about a week) and most of the time was spent researching algorithms
+        to detect heartbeats from the raw IR readings from the MAX 30102
+        followed by orientation and fall detection from the readings from the
+        MPU-6050.
+
+        Links to the repositories containing the libraries for each module are
+        listed below:
+        <ul>
+          <li><a href="https://github.com/jahunter767/arduino-max-30102-library">
+            MAX-30102</a>
+          </li>
+          <li>
+          <a href="https://github.com/jahunter767/arduino-mpu-6050-library">
+            MPU-6050</a>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </section>
+</main>
