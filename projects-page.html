@@ -153,6 +153,10 @@
         deadline was extended beyond the typical week long duration.
       </p>
       <p>
+        For more details on the assignment and my submission, see this git
+        <a href="https://github.com/jahunter767/elet3405-lab3">repository</a>.
+      </p>
+      <p>
         Having gone through that experience, I now have a much greater
         appreciation for thorough testing of embedded systems as well as
         the finer details of code and how subtle things may drastically affect
@@ -172,10 +176,6 @@
         I would have also spent more time debugging the ISRs to improve the
         overall user experience of the system as there were some bugs in the
         mode switching that hindered usability.
-      </p>
-      <p>
-        For more details on the assignment and my submission, see this git
-        <a href="https://github.com/jahunter767/elet3405-lab3">repository</a>.
       </p>
     </div>
   </section>
@@ -221,8 +221,64 @@
   </section>
   <section>
     <div class="container">
+      <h2>SMPL Language</h2>
+      <h3>Dec 11, 2020 - Jan 4, 2021</h3>
+      <p>
+        SMPL is a dynamically typed, interpreted language with support for
+        procedures as first class opjects and each statement implicitly returns
+        a value. Implementation of this language served as the final project
+        for the elective called Language Processors (COMP 3652) at UWI and was
+        done in groups. See this git
+        <a href="https://github.com/jahunter767/COMP-3652-Final-Project-2020">
+        repository</a> for the language's specification sheet, project manual
+        and my group's submission.
+      </p>
+      <p>
+        Throughout the duration of the course we explored the process of lexing
+        (using a tool called jflex), parsing (using Java Cup) and evaluating/
+        executing the written code. There were also discussions on how compiled
+        and assembled languages were processed and the implication of various
+        language features (such as functions, static and dynamic scoping and
+        garbage collection) on how the written code is executed.
+      </p>
+      <p>
+        Although we had implemented several of the features individually in
+        several prior assignments at a smaller scale, we were now faced with the
+        challenge of combining all those features; updating the syntax to match
+        the new spec; implementing new features not covered in previous
+        assignments; implementing a minimising binary heap using SMPL; all
+        at once. Our approach to completing the project came down to 4 steps,
+        updating the lexer to support the new syntax and features; writing the
+        code for the new tokens so the tree used to evaluate the tokens is
+        properly generated; updating the visitor interface and evaluator to
+        support the actual execution of SMPL code; implementing the minimising
+        binary heap using SMPL.
+      </p>
+      <p>
+        In the end, we managed to implement all the mandatory features except
+        supporting procedure bodies not enclosed in curly backets and implemted
+        the minimising heap. As for optional features, we managed to implement
+        variable arity procedures and redefinable built-ins.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
       <h2>MAX-30102 and MPU-6050 Arduino Libraries</h2>
       <h3>Mar 2020 - Apr 2020</h3>
+      <p>
+        Links to the repositories containing the libraries for each module are
+        listed below:
+        <ul>
+          <li><a href="https://github.com/jahunter767/arduino-max-30102-library">
+            MAX-30102</a>
+          </li>
+          <li>
+          <a href="https://github.com/jahunter767/arduino-mpu-6050-library">
+            MPU-6050</a>
+          </li>
+        </ul>
+      </p>
       <p>
         These libraries were developed to facilitate a school project I was
         working on simultaneously that was intended to monitor patient's
@@ -236,8 +292,10 @@
         Libraries had already existed for both modules however the
         communication via i2c and the logic to interface with the modules were
         deeply coupled preventing both libraries from being used simultaneously.
-        Personally, I also found the code not to be very readable so I thought
-        to rewrite the libraries as opposed to modifying the existing code.
+        I also experienced some issues which at the time I couldn't figure out
+        how to solve. Additionally, I found some of the code not to be very
+        readable or a bit hard to follow logic wise so I thought to rewrite the
+        libraries as opposed to modifying the existing code.
       </p>
       <p>
         This exercise served as my first dive into C++ and writing my own
@@ -278,19 +336,6 @@
         After this point, computing the actual rate was as simple as measuring
         the period then reciprocating and scaling it produced was a simple way
         to determine the rate.
-      </p>
-      <p>
-        Links to the repositories containing the libraries for each module are
-        listed below:
-        <ul>
-          <li><a href="https://github.com/jahunter767/arduino-max-30102-library">
-            MAX-30102</a>
-          </li>
-          <li>
-          <a href="https://github.com/jahunter767/arduino-mpu-6050-library">
-            MPU-6050</a>
-          </li>
-        </ul>
       </p>
     </div>
   </section>
