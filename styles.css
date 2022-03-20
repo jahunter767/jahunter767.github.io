@@ -30,6 +30,10 @@ body {
     min-width: 720px;
 }
 
+/*----------------------------------------------------------------------------
+-- Static Page Element Styles
+----------------------------------------------------------------------------*/
+
 aside .container {
     padding: 1px 10% 1px 10%;
     background-color: #5C84B1;
@@ -42,31 +46,6 @@ aside ul {
     justify-content: space-around;
     list-style-type: none;
     padding-left: 0px;
-}
-
-header .container{
-    display: grid;
-    grid-template-columns: 1fr 200px 400px 1fr;
-    grid-template-rows: auto auto;
-    background-color: yellow;
-}
-
-header .container .profile-pic {
-    grid-column: 2;
-    grid-row: span 2;
-    border-radius: 50%;
-    background-color: red;
-    margin: 5px;
-}
-
-header .container h1 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-header .container p {
-    grid-column: 3;
-    grid-row: 2;
 }
 
 footer .container {
@@ -85,8 +64,9 @@ footer .container ul {
 footer .container .profile-pic {
     grid-row: 1;
     grid-column: 2;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5%;
-    background-color: red;
 }
 
 footer .container .contact-info {
@@ -106,3 +86,48 @@ footer .container #last-modified {
     grid-row: 2;
     grid-column: span 4;
 }
+
+/*----------------------------------------------------------------------------
+-- Home Page Styles
+----------------------------------------------------------------------------*/
+
+.home-page header .container{
+    display: grid;
+    grid-template-columns: 1fr 200px 400px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    background-color: yellow;
+}
+
+.home-page header .container .profile-pic {
+    grid-column: 2;
+    grid-row: span 2;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.home-page header .container h1 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.home-page header .container p {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.home-page section.education table tr>td:first-child {
+    width: 12ch;
+}
+
+.home-page section.skills .language-list{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 60ch;
+}
+
+/*----------------------------------------------------------------------------
+-- Projects Page Styles
+----------------------------------------------------------------------------*/

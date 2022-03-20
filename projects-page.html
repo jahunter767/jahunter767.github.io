@@ -1,342 +1,355 @@
-<main>
-  <section>
-    <div class="container">
-      <h2>Scrumble</h2>
-      <h3>October 1, 2021 - December 1, 2021</h3>
-      <p>
-        This is a 2 player game that is modeled after Scrabble but altered to
-        be more competitive and fast paced. It retained most of the mechanics
-        from Scrabble except that word length and the time taken to make a play
-        are used to add bonuses to a player's score instead of special tiles on
-        the board and points earned shift a slider in the player's favour (to
-        the detriment of the opponent) in a similar fashion to a tug-of-war
-        match. Matches may also be timed for an added challenge.
-      </p>
-      <p>
-        This game served as the concept for my group's software modeling
-        project for the course SWEN 3145 (Software Modelling). The design for
-        the game took place over the span of several smaller course assignments,
-        some of which had additional requirements such as producing a software
-        requirements document, conducting clause and predicate coverage testing
-        for a specific use case (in our case playing a match) as well as a
-        corresponding object diagram for that use case.
-      </p>
-      <p>
-        The project was modeled using the UML-based Specification Environment
-        (USE) tool to generate the class, object, sequence and state machine
-        diagrams as well as simulate the execution of the modeled software.
-        The class diagrams were written in UML in the .use files and simulation
-        was facilitated using the Simple OCL-based Imperative Language (SOIL)
-        of USE seen in the .soil files in this github
-        <a href="https://github.com/jahunter767/swen3145_theJTK">repository</a>.
-      </p>
-      <p>
-        Working on this project taught me a lot about software modeling and
-        software development at large. I gained a greater appreciation for
-        the importance of having a mostly fleshed out class diagram before
-        engaging in implementation of the software. I have also witnessed how
-        even a seemingly well designed class diagram can have unforseen
-        limitations that impede design and implementation or even add
-        unnecessary complexity to otherwise simple tasks for the software.
-        This project also served as a basic introduction to security
-        considerations (primary access-control enforcement) and how they affect
-        software models which I found very interesting.
-      </p>
-      <p>
-        Had I gotten the chance to do this project again, there are a few things
-        I would do differently. Firstly, I would have put more effort and
-        emphasis on completing the ACL aspects of the model before attempting
-        to add features. Additionally, I would have been more proactive in
-        getting the group to confirm the details on the features to be
-        implemented and their requirements to minimize scope creep. Lastly, I
-        would try to check on the progress of the other group members more
-        frequently in order to catch mistakes earlier in the development
-        process.
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>Single GPU Passthrough</h2>
-      <h3>Oct 2021</h3>
-      <p>
-        At this point I had been dual booting Windows and Linux for almost 3
-        years and realized the only real need I had for Windows was for
-        proprietary software with no FOSS equivalent offered in my distro's
-        repository and for the rare occasions that I play games. Realizing
-        this, the idea of switching to linux full time and using a virtual
-        machine with hardware passthrough for Windows became more appealing
-        versus having to maintain 2 OSes, one of which I rarely use.
-      </p>
-      <p>
-        This project served as a final experiment to explore the feasibility
-        of running Windows in a disposable VM versus dual booting. After
-        spending a few days learning how to passthrough hardware with my
-        hypervisor and actively using it for my specific use cases over the span
-        of a month, I found the advantages far outweighed the disadvantages for
-        my specific situation and I have since switched to linux full time in
-        the following month.
-      </p>
-      <table>
-        <thead>
+<div class="projects-page">
+  <main>
+    <section>
+      <div class="container">
+        <h2>Scrumble</h2>
+        <h3>October 1, 2021 - December 1, 2021</h3>
+        <p>
+          This is a 2 player game that is modeled after Scrabble but altered to
+          be more competitive and fast paced. It retained most of the mechanics
+          from Scrabble except that word length and the time taken to make a
+          play are used to add bonuses to a player's score instead of special
+          tiles on the board and points earned shift a slider in the player's
+          favour (to the detriment of the opponent) in a similar fashion to a
+          tug-of-war match. Matches may also be timed for an added challenge.
+        </p>
+        <p>
+          This game served as the concept for my group's software modeling
+          project for the course SWEN 3145 (Software Modelling). The design for
+          the game took place over the span of several smaller course
+          assignments, some of which had additional requirements such as
+          producing a software requirements document, conducting clause and
+          predicate coverage testing for a specific use case (in our case
+          playing a match) as well as a corresponding object diagram for that
+          use case.
+        </p>
+        <p>
+          The project was modeled using the UML-based Specification Environment
+          (USE) tool to generate the class, object, sequence and state machine
+          diagrams as well as simulate the execution of the modeled software.
+          The class diagrams were written in UML in the .use files and
+          simulation was facilitated using the Simple OCL-based Imperative
+          Language (SOIL) of USE seen in the .soil files in this github
+          <a href="https://github.com/jahunter767/swen3145_theJTK">
+          repository</a>.
+        </p>
+        <p>
+          Working on this project taught me a lot about software modeling and
+          software development at large. I gained a greater appreciation for
+          the importance of having a mostly fleshed out class diagram before
+          engaging in implementation of the software. I have also witnessed how
+          even a seemingly well designed class diagram can have unforseen
+          limitations that impede design and implementation or even add
+          unnecessary complexity to otherwise simple tasks for the software.
+          This project also served as a basic introduction to security
+          considerations (primary access-control enforcement) and how they
+          affect software models which I found very interesting.
+        </p>
+        <p>
+          Had I gotten the chance to do this project again, there are a few
+          things I would do differently. Firstly, I would have put more effort
+          and emphasis on completing the ACL aspects of the model before
+          attempting to add features. Additionally, I would have been more
+          proactive in getting the group to confirm the details on the features
+          to be implemented and their requirements to minimize scope creep.
+          Lastly, I would try to check on the progress of the other group
+          members more frequently in order to catch mistakes earlier in the
+          development process.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Single GPU Passthrough</h2>
+        <h3>Oct 2021</h3>
+        <p>
+          At this point I had been dual booting Windows and Linux for almost 3
+          years and realized the only real need I had for Windows was for
+          proprietary software with no FOSS equivalent offered in my distro's
+          repository and for the rare occasions that I play games. Realizing
+          this, the idea of switching to linux full time and using a virtual
+          machine with hardware passthrough for Windows became more appealing
+          versus having to maintain 2 OSes, one of which I rarely use.
+        </p>
+        <p>
+          This project served as a final experiment to explore the feasibility
+          of running Windows in a disposable VM versus dual booting. After
+          spending a few days learning how to passthrough hardware with my
+          hypervisor and actively using it for my specific use cases over the
+          span of a month, I found the advantages far outweighed the
+          disadvantages for my specific situation and I have since switched to
+          linux full time in the following month.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <td>Advantages</td>
+              <td>Disadvantages</td>
+            </tr>
+          </thead>
           <tr>
-            <td>Advantages</td>
-            <td>Disadvantages</td>
+            <td>saves storage space as the virtual disk expands as needed</td>
+            <td>
+              less system resources (like RAM and CPU cores) available to
+              the VM
+            </td>
           </tr>
-        </thead>
-        <tr>
-          <td>saves storage space as the virtual disk expands as needed</td>
-          <td>
-            less system resources (like RAM and CPU cores) available to
-            the VM
-          </td>
-        </tr>
-        <tr>
-          <td>
-            not limited to storing personal files on NTFS (which has limited
-            support for linux at the time of writing this) or FAT file
-            systems. In other words I can use more complex file systems with
-            more features like BTRFS with copy-on-write and snapshot support.
-          </td>
-          <td>
-            exposing files to VM via a network share over a virtual
-            network has noticeably higher latency than passing through a
-            drive
-          </td>
-        </tr>
-        <tr>
-          <td>
-            I can use full disk encryption to protect my personal files when
-            my PC is off
-          </td>
-          <td>
-            the performance penalty for virtualization (though this is
-            mainly noticeable in more demanding tasks)
-          </td>
-        </tr>
-        <tr>
-          <td>less drivers to install and update on a regular basis</td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            easy to backup and restore a VM by using snapshots or saving a
-            copy of the virtual disk and the hypervisor configuration
-          </td>
-          <td>
-          </td>
-        </tr>
-      </table>
-      <p>
-        For details on how I setup the VM see this
-        <a href="https://github.com/jahunter767/Single-GPU-Passthrough">
-        repository</a>.
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>DIY Multimeter</h2>
-      <h3>Mar 8, 2021 - Apr 19, 2021</h3>
-      <p>
-        This project was actually a lab for a course called Engineering Analysis
-        and Practise (ELET 3405). We were given a schematic for a multimeter
-        using an ATmega 32 or ATmega 16 at the core and tasked with implementing
-        the firmware. The specific features each student had to implement were
-        determined by their major. One of my majors was in Electronics hence I
-        had to implement firmware to measure temperature, frequency of a square
-        wave and distance in addition to the default DC voltage, capacitance and
-        resistance. Unfortunately due to the course being delivered remotely,
-        a lack of access to the necessary modules and the lecturer having
-        external issues hindering his ability to moderate the course, the
-        deadline was extended beyond the typical week long duration.
-      </p>
-      <p>
-        For more details on the assignment and my submission, see this git
-        <a href="https://github.com/jahunter767/elet3405-lab3">repository</a>.
-      </p>
-      <p>
-        Having gone through that experience, I now have a much greater
-        appreciation for thorough testing of embedded systems as well as
-        the finer details of code and how subtle things may drastically affect
-        the accuracy or reliability of a system. For instance how floating point
-        opperations can have errors when dealing with extremely small or large
-        numbers so formulas used to derive a measurement need to be crafted
-        in a way to minimize such errors. Another thing I learnt is how the
-        complexity or length of interrupt code can drastically affect
-        responsiveness or stability of a system.
-      </p>
-      <p>
-        While I did manage to mostly complete the project, looking back there
-        are a few things I would do differently. I would have opted to use a
-        Wheatstone bridge for the ohm meter function for improved accuracy.
-        Implementing a basic automated test suite would have also reduced the
-        amount of tedious manual testing potentially speeding up development.
-        I would have also spent more time debugging the ISRs to improve the
-        overall user experience of the system as there were some bugs in the
-        mode switching that hindered usability.
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>8-Bit ALU Part 2</h2>
-      <h3>Mar 5, 2021 - Mar 12, 2021</h3>
-      <p>
-        This assignment built on the previous one by requiring the class to
-        implement the ALU designed in Logisim using VHDL. It was our first
-        assignment using VHDL (as well as my first encounter with the language)
-        so I had to balance teaching myself the language as well as implementing
-        the ALU. Details on the assignment and my submission can be found in
-        this github <a href="https://github.com/jahunter767/elet2570-assign2">
-        repository</a>.
-      </p>
-      <p>
-        While there was no requirement to run the code, I managed to create a
-        basic testbench and debug the first few test cases however I was unable
-        to completely test and debug the code before the submission date.
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>8-Bit ALU Part 1</h2>
-      <h3>Feb 19, 2021 - Feb 26, 2021</h3>
-      <p>
-        This project was actually the first assignment for the course
-        Microprocessors and Computer Architecture (ELET 2570) at UWI. We were
-        required to design an 8-bit ALU that could perform the operations AND,
-        OR, EOR, ADD, SUBTRACT, MULTIPLY and COMPARE using a tool called
-        Logisim. For more details on the assignment and my submission, see this
-        git <a href="https://github.com/jahunter767/elet2570-assign1">repository
-        </a>.
-      </p>
-      <p>
-        This was my first exposure to Logisim and logic simulation software in
-        general. This assignment gave me an appreciation for modular design and
-        the separation of concerns in the context of logic circuits.
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>SMPL Language</h2>
-      <h3>Dec 11, 2020 - Jan 4, 2021</h3>
-      <p>
-        SMPL is a dynamically typed, interpreted language with support for
-        procedures as first class opjects and each statement implicitly returns
-        a value. Implementation of this language served as the final project
-        for the elective called Language Processors (COMP 3652) at UWI and was
-        done in groups. See this git
-        <a href="https://github.com/jahunter767/COMP-3652-Final-Project-2020">
-        repository</a> for the language's specification sheet, project manual
-        and my group's submission.
-      </p>
-      <p>
-        Throughout the duration of the course we explored the process of lexing
-        (using a tool called jflex), parsing (using Java Cup) and evaluating/
-        executing the written code. There were also discussions on how compiled
-        and assembled languages were processed and the implication of various
-        language features (such as functions, static and dynamic scoping and
-        garbage collection) on how the written code is executed.
-      </p>
-      <p>
-        Although we had implemented several of the features individually in
-        several prior assignments at a smaller scale, we were now faced with the
-        challenge of combining all those features; updating the syntax to match
-        the new spec; implementing new features not covered in previous
-        assignments; implementing a minimising binary heap using SMPL; all
-        at once. Our approach to completing the project came down to 4 steps,
-        updating the lexer to support the new syntax and features; writing the
-        code for the new tokens so the tree used to evaluate the tokens is
-        properly generated; updating the visitor interface and evaluator to
-        support the actual execution of SMPL code; implementing the minimising
-        binary heap using SMPL.
-      </p>
-      <p>
-        In the end, we managed to implement all the mandatory features except
-        supporting procedure bodies not enclosed in curly backets and implemted
-        the minimising heap. As for optional features, we managed to implement
-        variable arity procedures and redefinable built-ins.
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>MAX-30102 and MPU-6050 Arduino Libraries</h2>
-      <h3>Mar 2020 - Apr 2020</h3>
-      <p>
-        Links to the repositories containing the libraries for each module are
-        listed below:
-        <ul>
-          <li><a href="https://github.com/jahunter767/arduino-max-30102-library">
-            MAX-30102</a>
-          </li>
-          <li>
-          <a href="https://github.com/jahunter767/arduino-mpu-6050-library">
-            MPU-6050</a>
-          </li>
-        </ul>
-      </p>
-      <p>
-        These libraries were developed to facilitate a school project I was
-        working on simultaneously that was intended to monitor patient's
-        well-being. The patient monitoring system tracked the patient's heart
-        rate, sleeping position and detect falls among other things and relay
-        the data to a server. While I can't release the full code for the
-        project I thought at least publish the libraries for anyone who may need
-        them in the future.
-      </p>
-      <p>
-        Libraries had already existed for both modules however the
-        communication via i2c and the logic to interface with the modules were
-        deeply coupled preventing both libraries from being used simultaneously.
-        I also experienced some issues which at the time I couldn't figure out
-        how to solve. Additionally, I found some of the code not to be very
-        readable or a bit hard to follow logic wise so I thought to rewrite the
-        libraries as opposed to modifying the existing code.
-      </p>
-      <p>
-        This exercise served as my first dive into C++ and writing my own
-        libraries. This required me to familiarize myself with the documentation
-        for the modules and the relevant protocols and interfaces for each. At
-        that time I opted to take an object-oriented approach considering the
-        fact that there may be a situation in which one might want to use
-        multiple of the same module. I also specified a structure for the
-        purpose of storing the relevant readings from the modules to simplify
-        and unify the data representation in the code. Beyond that most of the
-        code was formulating and processing the commands and data sent to and
-        received from the modules respectively.
-      </p>
-      <p>
-        The most complex aspect of the project however was formulating algoithms
-        to process the data the modules collected. The data both modules produce
-        is very noisy and both modules don't have any features to denoise the
-        readings, as such, the data needed to be denoised in the software. After
-        researching a bit and using the original libraries as a reference, I
-        settled on using an exponential moving average. Using an exponential
-        moving average keeps memory requirements to a minimum as only the
-        previous average and the current reading needed to be stored to produce
-        the next reading, which is good for memory constrained situations like
-        with embedded devices. The main difficulty however is finding the right
-        weights for computing the average so as not to filter out the meaningful
-        data or make the average too resistant to changes.
-      </p>
-      <p>
-        The next step after denoising the data was to detect pulses for reading
-        heart rate. Even after denoising the data, the "DC bias" of the signal
-        tends to fluctuate whenever the patient moves so there needed to be a
-        way to detect that normalised level in real-time to use as a reference
-        to identify pulses. I opted to use another moving average that filtered
-        out the pulses as well, however there would always be 2 to 3 bogus
-        pulses in the mix as the second average readjusted to the new level.
-      </p>
-      <p>
-        After this point, computing the actual rate was as simple as measuring
-        the period then reciprocating and scaling it produced was a simple way
-        to determine the rate.
-      </p>
-    </div>
-  </section>
-</main>
+          <tr>
+            <td>
+              not limited to storing personal files on NTFS (which has limited
+              support for linux at the time of writing this) or FAT file
+              systems. In other words I can use more complex file systems with
+              more features like BTRFS with copy-on-write and snapshot support.
+            </td>
+            <td>
+              exposing files to VM via a network share over a virtual
+              network has noticeably higher latency than passing through a
+              drive
+            </td>
+          </tr>
+          <tr>
+            <td>
+              I can use full disk encryption to protect my personal files when
+              my PC is off
+            </td>
+            <td>
+              the performance penalty for virtualization (though this is
+              mainly noticeable in more demanding tasks)
+            </td>
+          </tr>
+          <tr>
+            <td>less drivers to install and update on a regular basis</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              easy to backup and restore a VM by using snapshots or saving a
+              copy of the virtual disk and the hypervisor configuration
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+        <p>
+          For details on how I setup the VM see this
+          <a href="https://github.com/jahunter767/Single-GPU-Passthrough">
+          repository</a>.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>DIY Multimeter</h2>
+        <h3>Mar 8, 2021 - Apr 19, 2021</h3>
+        <p>
+          This project was actually a lab for a course called Engineering
+          Analysis and Practise (ELET 3405). We were given a schematic for a
+          multimeter using an ATmega 32 or ATmega 16 at the core and tasked with
+          implementing the firmware. The specific features each student had to
+          implement were determined by their major. One of my majors was in
+          Electronics hence I had to implement firmware to measure temperature,
+          frequency of a square wave and distance in addition to the default DC
+          voltage, capacitance and resistance. Unfortunately due to the course
+          being delivered remotely, a lack of access to the necessary modules
+          and the lecturer having external issues hindering his ability to
+          moderate the course, the deadline was extended beyond the typical
+          week long duration.
+        </p>
+        <p>
+          For more details on the assignment and my submission, see this git
+          <a href="https://github.com/jahunter767/elet3405-lab3">repository</a>.
+        </p>
+        <p>
+          Having gone through that experience, I now have a much greater
+          appreciation for thorough testing of embedded systems as well as
+          the finer details of code and how subtle things may drastically affect
+          the accuracy or reliability of a system. For instance how floating
+          point opperations can have errors when dealing with extremely small
+          or large numbers so formulas used to derive a measurement need to be
+          crafted in a way to minimize such errors. Another thing I learnt is
+          how the complexity or length of interrupt code can drastically affect
+          responsiveness or stability of a system.
+        </p>
+        <p>
+          While I did manage to mostly complete the project, looking back there
+          are a few things I would do differently. I would have opted to use a
+          Wheatstone bridge for the ohm meter function for improved accuracy.
+          Implementing a basic automated test suite would have also reduced the
+          amount of tedious manual testing potentially speeding up development.
+          I would have also spent more time debugging the ISRs to improve the
+          overall user experience of the system as there were some bugs in the
+          mode switching that hindered usability.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>8-Bit ALU Part 2</h2>
+        <h3>Mar 5, 2021 - Mar 12, 2021</h3>
+        <p>
+          This assignment built on the previous one by requiring the class to
+          implement the ALU designed in Logisim using VHDL. It was our first
+          assignment using VHDL (as well as my first encounter with the
+          language) so I had to balance teaching myself the language as well
+          as implementing the ALU. Details on the assignment and my submission
+          can be found in this github
+          <a href="https://github.com/jahunter767/elet2570-assign2">repository
+          </a>.
+        </p>
+        <p>
+          While there was no requirement to run the code, I managed to create a
+          basic testbench and debug the first few test cases however I was
+          unable to completely test and debug the code before the submission
+          date.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>8-Bit ALU Part 1</h2>
+        <h3>Feb 19, 2021 - Feb 26, 2021</h3>
+        <p>
+          This project was actually the first assignment for the course
+          Microprocessors and Computer Architecture (ELET 2570) at UWI. We were
+          required to design an 8-bit ALU that could perform the operations AND,
+          OR, EOR, ADD, SUBTRACT, MULTIPLY and COMPARE using a tool called
+          Logisim. For more details on the assignment and my submission, see
+          this git
+          <a href="https://github.com/jahunter767/elet2570-assign1">repository
+          </a>.
+        </p>
+        <p>
+          This was my first exposure to Logisim and logic simulation software
+          in general. This assignment gave me an appreciation for modular
+          design and the separation of concerns in the context of logic
+          circuits.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>SMPL Language</h2>
+        <h3>Dec 11, 2020 - Jan 4, 2021</h3>
+        <p>
+          SMPL is a dynamically typed, interpreted language with support for
+          procedures as first class opjects and each statement implicitly
+          returns a value. Implementation of this language served as the final
+          project for the elective called Language Processors (COMP 3652) at
+          UWI and was done in groups. See this git
+          <a href="https://github.com/jahunter767/COMP-3652-Final-Project-2020">
+          repository</a> for the language's specification sheet, project manual
+          and my group's submission.
+        </p>
+        <p>
+          Throughout the duration of the course we explored the process of
+          lexing (using a tool called jflex), parsing (using Java Cup) and
+          evaluating/executing the written code. There were also discussions
+          on how compiled and assembled languages were processed and the
+          implications of various language features (such as functions, static
+          and dynamic scoping and garbage collection) on how the written code
+          is executed.
+        </p>
+        <p>
+          Although we had implemented several of the features individually in
+          several prior assignments at a smaller scale, we were now faced with
+          the challenge of combining all those features; updating the syntax
+          to match the new spec; implementing new features not covered in
+          previous assignments; implementing a minimising binary heap using
+          SMPL; all at once. Our approach to completing the project came down
+          to 4 steps, updating the lexer to support the new syntax and features;
+          writing the code for the new tokens so the tree used to evaluate the
+          tokens is properly generated; updating the visitor interface and
+          evaluator to support the actual execution of SMPL code; implementing
+          the minimising binary heap using SMPL.
+        </p>
+        <p>
+          In the end, we managed to implement all the mandatory features except
+          supporting procedure bodies not enclosed in curly backets and
+          implemted the minimising heap. As for optional features, we managed
+          to implement variable arity procedures and redefinable built-ins.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>MAX-30102 and MPU-6050 Arduino Libraries</h2>
+        <h3>Mar 2020 - Apr 2020</h3>
+        <p>
+          Links to the repositories containing the libraries for each module
+          are listed below:
+          <ul>
+            <li><a href="https://github.com/jahunter767/arduino-max-30102-library">
+              MAX-30102</a>
+            </li>
+            <li>
+            <a href="https://github.com/jahunter767/arduino-mpu-6050-library">
+              MPU-6050</a>
+            </li>
+          </ul>
+        </p>
+        <p>
+          These libraries were developed to facilitate a school project I was
+          working on simultaneously that was intended to monitor patient's
+          well-being. The patient monitoring system tracked the patient's heart
+          rate, sleeping position and detect falls among other things and relay
+          the data to a server. While I can't release the full code for the
+          project I thought at least publish the libraries for anyone who may
+          need them in the future.
+        </p>
+        <p>
+          Libraries had already existed for both modules however the
+          communication via i2c and the logic to interface with the modules were
+          deeply coupled preventing both libraries from being used
+          simultaneously. I also experienced some issues which at the time I
+          couldn't figure out how to solve. Additionally, I found some of the
+          code not to be very readable or a bit hard to follow logic wise so I
+          thought to rewrite the libraries as opposed to modifying the existing
+          code.
+        </p>
+        <p>
+          This exercise served as my first dive into C++ and writing my own
+          libraries. This required me to familiarize myself with the
+          documentation for the modules and the relevant protocols and
+          interfaces for each. At that time I opted to take an object-oriented
+          approach considering the fact that there may be a situation in which
+          one might want to use multiple of the same module. I also specified
+          a structure for the purpose of storing the relevant readings from
+          the modules to simplify and unify the data representation in the code.
+          Beyond that most of the code was formulating and processing the
+          commands and data sent to and received from the modules respectively.
+        </p>
+        <p>
+          The most complex aspect of the project however was formulating
+          algoithms to process the data the modules collected. The data both
+          modules produce is very noisy and both modules don't have any features
+          to denoise the readings, as such, the data needed to be denoised in
+          the software. After researching a bit and using the original libraries
+          as a reference, I settled on using an exponential moving average.
+          Using an exponential moving average keeps memory requirements to a
+          minimum as only the previous average and the current reading needed
+          to be stored to produce the next reading, which is good for memory
+          constrained situations like with embedded devices. The main difficulty
+          however is finding the right weights for computing the average so as
+          not to filter out the meaningful data or make the average too
+          resistant to changes.
+        </p>
+        <p>
+          The next step after denoising the data was to detect pulses for
+          reading heart rate. Even after denoising the data, the "DC bias" of
+          the signal tends to fluctuate whenever the patient moves so there
+          needed to be a way to detect that normalised level in real-time to
+          use as a reference to identify pulses. I opted to use another moving
+          average that filtered out the pulses as well, however there would
+          always be 2 to 3 bogus pulses in the mix as the second average
+          readjusted to the new level.
+        </p>
+        <p>
+          After this point, computing the actual rate was as simple as measuring
+          the period then reciprocating and scaling it produced was a simple way
+          to determine the rate.
+        </p>
+      </div>
+    </section>
+  </main>
+</div>
