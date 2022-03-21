@@ -151,16 +151,18 @@ footer .container #last-modified {
 
 .home-page header .container{
     display: grid;
-    grid-template-columns: 1fr 200px 400px 1fr;
+    grid-template-columns: 1fr minmax(1.5in, 2.5in) minmax(3.5in, 5in) 1fr;
     grid-template-rows: auto auto;
     column-gap: 10px;
     background-color: var(--primary-color);
     color: var(--high-contrast-text-color);
+    text-align: left;
 }
 
 .home-page header .container .profile-pic {
     grid-column: 2;
     grid-row: span 2;
+    margin: auto;
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
