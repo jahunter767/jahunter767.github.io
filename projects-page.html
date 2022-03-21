@@ -2,8 +2,8 @@
   <main>
     <section>
       <div class="container">
-        <h2>Scrumble</h2>
-        <h3>October 1, 2021 - December 1, 2021</h3>
+        <h5>Scrumble</h5>
+        <h6>Oct 1, 2021 - Dec 1, 2021</h6>
         <p>
           This is a 2 player game that is modeled after Scrabble but altered to
           be more competitive and fast paced. It retained most of the mechanics
@@ -58,10 +58,11 @@
         </p>
       </div>
     </section>
+    <div class="container"><hr/></div>
     <section>
       <div class="container">
-        <h2>Single GPU Passthrough</h2>
-        <h3>Oct 2021</h3>
+        <h5>Single GPU Passthrough</h5>
+        <h6>Oct 2021</h6>
         <p>
           At this point I had been dual booting Windows and Linux for almost 3
           years and realized the only real need I had for Windows was for
@@ -80,57 +81,52 @@
           disadvantages for my specific situation and I have since switched to
           linux full time in the following month.
         </p>
-        <table>
-          <thead>
-            <tr>
-              <td>Advantages</td>
-              <td>Disadvantages</td>
-            </tr>
-          </thead>
-          <tr>
-            <td>saves storage space as the virtual disk expands as needed</td>
-            <td>
-              less system resources (like RAM and CPU cores) available to
-              the VM
-            </td>
-          </tr>
-          <tr>
-            <td>
-              not limited to storing personal files on NTFS (which has limited
-              support for linux at the time of writing this) or FAT file
-              systems. In other words I can use more complex file systems with
-              more features like BTRFS with copy-on-write and snapshot support.
-            </td>
-            <td>
-              exposing files to VM via a network share over a virtual
-              network has noticeably higher latency than passing through a
-              drive
-            </td>
-          </tr>
-          <tr>
-            <td>
-              I can use full disk encryption to protect my personal files when
-              my PC is off
-            </td>
-            <td>
-              the performance penalty for virtualization (though this is
-              mainly noticeable in more demanding tasks)
-            </td>
-          </tr>
-          <tr>
-            <td>less drivers to install and update on a regular basis</td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              easy to backup and restore a VM by using snapshots or saving a
-              copy of the virtual disk and the hypervisor configuration
-            </td>
-            <td>
-            </td>
-          </tr>
-        </table>
+        <div class="comparison-table">
+          <div>
+            <span>Advantages:</span>
+            <ul>
+                <li>
+                  saves storage space as the virtual disk expands as needed
+                </li>
+                <li>
+                  not limited to storing personal files on NTFS (which has
+                  limited support for linux at the time of writing this) or FAT
+                  file systems. In other words I can use more complex file
+                  systems with more features like BTRFS with copy-on-write and
+                  snapshot support
+                </li>
+                <li>
+                  I can use full disk encryption to protect my personal files
+                  when my PC is off
+                </li>
+                <li>
+                  less drivers to install and update on a regular basis
+                </li>
+                <li>
+                  easy to backup and restore a VM by using snapshots or saving
+                  a copy of the virtual disk and the hypervisor configuration
+                </li>
+            </ul>
+          </div>
+          <div>
+            <span>Disadvantages:</span>
+            <ul>
+                <li>
+                  less system resources (like RAM and CPU cores) available to
+                  the VM
+                </li>
+                <li>
+                  exposing files to VM via a network share over a virtual
+                  network has noticeably higher latency than passing through a
+                  drive
+                </li>
+                <li>
+                  the performance penalty for virtualization (though this is
+                  mainly noticeable in more demanding tasks)
+                </li>
+            </ul>
+          </div>
+        </div>
         <p>
           For details on how I setup the VM see this
           <a href="https://github.com/jahunter767/Single-GPU-Passthrough">
@@ -138,10 +134,11 @@
         </p>
       </div>
     </section>
+    <div class="container"><hr/></div>
     <section>
       <div class="container">
-        <h2>DIY Multimeter</h2>
-        <h3>Mar 8, 2021 - Apr 19, 2021</h3>
+        <h5>DIY Multimeter</h5>
+        <h6>Mar 8, 2021 - Apr 19, 2021</h6>
         <p>
           This project was actually a lab for a course called Engineering
           Analysis and Practise (ELET 3405). We were given a schematic for a
@@ -183,10 +180,11 @@
         </p>
       </div>
     </section>
+    <div class="container"><hr/></div>
     <section>
       <div class="container">
-        <h2>8-Bit ALU Part 2</h2>
-        <h3>Mar 5, 2021 - Mar 12, 2021</h3>
+        <h5>8-Bit ALU Part 2</h5>
+        <h6>Mar 5, 2021 - Mar 12, 2021</h6>
         <p>
           This assignment built on the previous one by requiring the class to
           implement the ALU designed in Logisim using VHDL. It was our first
@@ -205,10 +203,11 @@
         </p>
       </div>
     </section>
+    <div class="container"><hr/></div>
     <section>
       <div class="container">
-        <h2>8-Bit ALU Part 1</h2>
-        <h3>Feb 19, 2021 - Feb 26, 2021</h3>
+        <h5>8-Bit ALU Part 1</h5>
+        <h6>Feb 19, 2021 - Feb 26, 2021</h6>
         <p>
           This project was actually the first assignment for the course
           Microprocessors and Computer Architecture (ELET 2570) at UWI. We were
@@ -227,10 +226,11 @@
         </p>
       </div>
     </section>
+    <div class="container"><hr/></div>
     <section>
       <div class="container">
-        <h2>SMPL Language</h2>
-        <h3>Dec 11, 2020 - Jan 4, 2021</h3>
+        <h5>SMPL Language</h5>
+        <h6>Dec 11, 2020 - Jan 4, 2021</h6>
         <p>
           SMPL is a dynamically typed, interpreted language with support for
           procedures as first class opjects and each statement implicitly
@@ -271,10 +271,11 @@
         </p>
       </div>
     </section>
+    <div class="container"><hr/></div>
     <section>
       <div class="container">
-        <h2>MAX-30102 and MPU-6050 Arduino Libraries</h2>
-        <h3>Mar 2020 - Apr 2020</h3>
+        <h5>MAX-30102 and MPU-6050 Arduino Libraries</h5>
+        <h6>Mar 2020 - Apr 2020</h6>
         <p>
           Links to the repositories containing the libraries for each module
           are listed below:
